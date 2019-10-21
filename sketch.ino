@@ -45,8 +45,6 @@ bool shouldRenderAnim(int fps) {
 int LAST_READ_TOTAL=0;
 int LAST_READ_TIMES=0;
 void recordAnalog() {
-  // FIX ME!: to avoid flashing
-  // TODO: It should collect avg for last 16ms(60fps)
   int soundVal = analogRead(PIN_SOUND);
   LAST_READ_TOTAL += soundVal;
   LAST_READ_TIMES++;
