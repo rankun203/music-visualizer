@@ -1,4 +1,7 @@
 #include "FastLED.h"
+/**
+ * @author me@rankun.net
+ */
 
 #define NUM_LEDS 64
 #define NUM_X 8
