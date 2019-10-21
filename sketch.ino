@@ -22,7 +22,7 @@ void setup() {
   FastLED.addLeds<NEOPIXEL, PIN_LED>(leds, NUM_LEDS);
   FastLED.setBrightness(NUM_BRIGHTNESS);
   pinMode(PIN_SOUND, INPUT);
-  Serial.begin(9600);
+  // Serial.begin(9600);
 }
 
 /** 
@@ -57,7 +57,7 @@ void loop() {
     return;
   }
 
-  Serial.println(LAST_READ_TOTAL / LAST_READ_TIMES);
+  // Serial.println(LAST_READ_TOTAL / LAST_READ_TIMES);
   int soundValAvg = floor(LAST_READ_TOTAL / LAST_READ_TIMES);
   LAST_READ_TOTAL=0; LAST_READ_TIMES=0;
   int height = map(soundValAvg, NUM_SOUND_MIN, NUM_SOUND_MAX, 0, NUM_Y);
